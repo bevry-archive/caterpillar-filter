@@ -4,7 +4,7 @@
 	"description": "Filter out undesired log levels from your Caterpillar logger stream",
 	"homepage": "https://github.com/bevry/caterpillar-filter",
 	"keywords": [
-		"caterpillar", "caterpillar-interface",
+		"caterpillar", "caterpillar-transform",
 		"console", "log", "logger", "logging", "debug",
 		"stream", "transform",
 		"human", "readable"
