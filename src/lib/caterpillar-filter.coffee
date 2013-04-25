@@ -1,7 +1,3 @@
-# Import
-extendr = require('extendr')
-stream = require('stream')
-
 # Filter
 class Filter extends require('caterpillar').Transform
 	config:

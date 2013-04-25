@@ -3,7 +3,7 @@
 joe = require('joe')
 {Logger} = require('caterpillar')
 {Filter} = require('../../')
-{PassThrough} = require('stream')
+{PassThrough} = require('readable-stream')
 
 # Test
 joe.describe 'filter', (describe,it) ->

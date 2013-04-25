@@ -1,6 +1,6 @@
 {
 	"name": "caterpillar-filter",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "Filter out undesired log levels from your Caterpillar logger stream",
 	"homepage": "https://github.com/bevry/caterpillar-filter",
 	"keywords": [
@@ -24,15 +24,14 @@
 		"url": "http://github.com/bevry/caterpillar-filter.git"
 	},
 	"engines": {
-		"node": ">=0.10"
+		"node": ">=0.8"
 	},
-	"dependencies": {
-		"extendr": "~2.0.1"
-	},
+	"dependencies": {},
 	"peerDependencies": {
 		"caterpillar": "2.x"
 	},
 	"devDependencies": {
+		"readable-stream": "~1.0.2",
 		"caterpillar": "2.x",
 		"coffee-script": "~1.6.2",
 		"joe": "~1.2.0",
