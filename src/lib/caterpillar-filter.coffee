@@ -16,4 +16,5 @@ class Filter extends require('caterpillar').Transform
 # Export
 module.exports = {
 	Filter
+	createFilter: (args...) ->  new Filter(args...)
 }
