@@ -1,5 +1,8 @@
 ## History
 
+- v2.0.3 October 23, 2013
+	- Fixed readme example
+
 - v2.0.2 October 23, 2013
 	- Added `create` API to make life easier when doing one liners
 	- Project meta data files are now maintained by [Projectz](https://github.com/bevry/projectz)

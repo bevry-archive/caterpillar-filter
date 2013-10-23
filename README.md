@@ -45,8 +45,8 @@ Filter out undesired log levels from your [Caterpillar](https://github.com/bevry
 
 ``` javascript
 // Import
-var logger = require('caterpillar').create();
-var filter = require('caterpillar-filter').create({level:6});  // omit log level entries above 6
+var logger = require('caterpillar').createLogger();
+var filter = require('caterpillar-filter').createFilter({level:6});  // omit log level entries above 6
 
 // Pipe logger output to filter, then filter output to stdout
 logger.pipe(filter).pipe(process.stdout);

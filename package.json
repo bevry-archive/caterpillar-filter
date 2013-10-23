@@ -1,7 +1,7 @@
 {
   "title": "Filter Transform for [Caterpillar](https://github.com/bevry/caterpillar)",
   "name": "caterpillar-filter",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Filter out undesired log levels from your [Caterpillar](https://github.com/bevry/caterpillar) logger stream",
   "homepage": "https://github.com/bevry/caterpillar-filter",
   "keywords": [
