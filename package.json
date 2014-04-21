@@ -4,6 +4,20 @@
   "version": "2.0.3",
   "description": "Filter out undesired log levels from your [Caterpillar](https://github.com/bevry/caterpillar) logger stream",
   "homepage": "https://github.com/bevry/caterpillar-filter",
+  "license": {
+    "type": "MIT"
+  },
+  "badges": {
+    "travis": true,
+    "npm": true,
+    "david": true,
+    "daviddev": true,
+    "gittip": "bevry",
+    "flattr": "344188/balupton-on-Flattr",
+    "paypal": "QB8GQPZAH84N6",
+    "bitcoin": "https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a",
+    "wishlist": "http://amzn.com/w/2F8TXKSNAFG4V"
+  },
   "keywords": [
     "caterpillar",
     "caterpillar-transform",
@@ -34,6 +48,7 @@
   "engines": {
     "node": ">=0.8"
   },
+  "browsers": true,
   "dependencies": {},
   "peerDependencies": {
     "caterpillar": "2.x"
@@ -44,7 +59,8 @@
     "coffee-script": "~1.6.2",
     "joe": "~1.3.0",
     "joe-reporter-console": "~1.2.1",
-    "chai": "~1.8.1"
+    "chai": "~1.8.1",
+    "projectz": "^0.3.11"
   },
   "directories": {
     "lib": "./out/lib"
@@ -52,15 +68,5 @@
   "scripts": {
     "test": "node ./out/test/caterpillar-filter-test.js"
   },
-  "main": "./out/lib/caterpillar-filter.js",
-  "badges": {
-    "travis": true,
-    "npm": true,
-    "gittip": "bevry",
-    "flattr": "344188/balupton-on-Flattr",
-    "paypal": "QB8GQPZAH84N6"
-  },
-  "license": {
-    "type": "MIT"
-  }
+  "main": "./out/lib/caterpillar-filter.js"
 }

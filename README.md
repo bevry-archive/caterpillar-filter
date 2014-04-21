@@ -9,10 +9,14 @@
 <!-- BADGES/ -->
 
 [![Build Status](http://img.shields.io/travis-ci/bevry/caterpillar-filter.png?branch=master)](http://travis-ci.org/bevry/caterpillar-filter "Check this project's build status on TravisCI")
-[![NPM version](https://badge.fury.io/js/caterpillar-filter.png)](https://npmjs.org/package/caterpillar-filter "View this project on NPM")
+[![NPM version](http://badge.fury.io/js/caterpillar-filter.png)](https://npmjs.org/package/caterpillar-filter "View this project on NPM")
+[![Dependency Status](https://david-dm.org/bevry/caterpillar-filter.png?theme=shields.io)](https://david-dm.org/bevry/caterpillar-filter)
+[![Development Dependency Status](https://david-dm.org/bevry/caterpillar-filter/dev-status.png?theme=shields.io)](https://david-dm.org/bevry/caterpillar-filter#info=devDependencies)<br/>
 [![Gittip donate button](http://img.shields.io/gittip/bevry.png)](https://www.gittip.com/bevry/ "Donate weekly to this project using Gittip")
-[![Flattr donate button](https://raw.github.com/balupton/flattr-buttons/master/badge-89x18.gif)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
-[![PayPayl donate button](https://www.paypalobjects.com/en_AU/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QB8GQPZAH84N6 "Donate once-off to this project using Paypal")
+[![Flattr donate button](http://img.shields.io/flattr/donate.png?color=yellow)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
+[![PayPayl donate button](http://img.shields.io/paypal/donate.png?color=yellow)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QB8GQPZAH84N6 "Donate once-off to this project using Paypal")
+[![BitCoin donate button](http://img.shields.io/bitcoin/donate.png?color=yellow)](https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a "Donate once-off to this project using BitCoin")
+[![Wishlist browse button](http://img.shields.io/wishlist/browse.png?color=yellow)](http://amzn.com/w/2F8TXKSNAFG4V "Buy an item on our wishlist for us")
 
 <!-- /BADGES -->
 
@@ -28,9 +32,14 @@ Filter out undesired log levels from your [Caterpillar](https://github.com/bevry
 
 ## Install
 
-### [Node](http://nodejs.org/), [Browserify](http://browserify.org/)
+### [NPM](http://npmjs.org/)
 - Use: `require('caterpillar-filter')`
 - Install: `npm install --save caterpillar-filter`
+
+### [Browserify](http://browserify.org/)
+- Use: `require('caterpillar-filter')`
+- Install: `npm install --save caterpillar-filter`
+- CDN URL: `//wzrd.in/bundle/caterpillar-filter@2.0.3`
 
 ### [Ender](http://ender.jit.su/)
 - Use: `require('caterpillar-filter')`
@@ -82,7 +91,7 @@ new (require('caterpillar-filter').Filter)(config)
 <!-- HISTORY/ -->
 
 ## History
-[Discover the change history by heading on over to the `History.md` file.](https://github.com/bevry/caterpillar-filter/blob/master/History.md#files)
+[Discover the change history by heading on over to the `HISTORY.md` file.](https://github.com/bevry/caterpillar-filter/blob/master/HISTORY.md#files)
 
 <!-- /HISTORY -->
 
@@ -102,16 +111,18 @@ These amazing people are maintaining this project:
 No sponsors yet! Will you be the first?
 
 [![Gittip donate button](http://img.shields.io/gittip/bevry.png)](https://www.gittip.com/bevry/ "Donate weekly to this project using Gittip")
-[![Flattr donate button](https://raw.github.com/balupton/flattr-buttons/master/badge-89x18.gif)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
-[![PayPayl donate button](https://www.paypalobjects.com/en_AU/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QB8GQPZAH84N6 "Donate once-off to this project using Paypal")
+[![Flattr donate button](http://img.shields.io/flattr/donate.png?color=yellow)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
+[![PayPayl donate button](http://img.shields.io/paypal/donate.png?color=yellow)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QB8GQPZAH84N6 "Donate once-off to this project using Paypal")
+[![BitCoin donate button](http://img.shields.io/bitcoin/donate.png?color=yellow)](https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a "Donate once-off to this project using BitCoin")
+[![Wishlist browse button](http://img.shields.io/wishlist/browse.png?color=yellow)](http://amzn.com/w/2F8TXKSNAFG4V "Buy an item on our wishlist for us")
 
 ### Contributors
 
 These amazing people have contributed code to this project:
 
-- Benjamin Lupton <b@lupton.cc> (https://github.com/balupton) - [view contributions](https://github.com/bevry/caterpillar-filter/commits?author=balupton)
+- [Benjamin Lupton](https://github.com/balupton) <b@lupton.cc> — [view contributions](https://github.com/bevry/caterpillar-filter/commits?author=balupton)
 
-[Become a contributor!](https://github.com/bevry/caterpillar-filter/blob/master/Contributing.md#files)
+[Become a contributor!](https://github.com/bevry/caterpillar-filter/blob/master/CONTRIBUTING.md#files)
 
 <!-- /BACKERS -->
 
