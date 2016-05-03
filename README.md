@@ -1,130 +1,124 @@
-
 <!-- TITLE/ -->
 
-# Filter Transform for [Caterpillar](https://github.com/bevry/caterpillar)
+<h1>Filter Transform for [Caterpillar](https://github.com/bevry/caterpillar)</h1>
 
 <!-- /TITLE -->
 
 
 <!-- BADGES/ -->
 
-[![Build Status](http://img.shields.io/travis-ci/bevry/caterpillar-filter.png?branch=master)](http://travis-ci.org/bevry/caterpillar-filter "Check this project's build status on TravisCI")
-[![NPM version](https://badge.fury.io/js/caterpillar-filter.png)](https://npmjs.org/package/caterpillar-filter "View this project on NPM")
-[![Gittip donate button](http://img.shields.io/gittip/bevry.png)](https://www.gittip.com/bevry/ "Donate weekly to this project using Gittip")
-[![Flattr donate button](https://raw.github.com/balupton/flattr-buttons/master/badge-89x18.gif)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
-[![PayPayl donate button](https://www.paypalobjects.com/en_AU/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QB8GQPZAH84N6 "Donate once-off to this project using Paypal")
+<span class="badge-travisci"><a href="http://travis-ci.org/bevry/caterpillar-filter" title="Check this project's build status on TravisCI"><img src="https://img.shields.io/travis/bevry/caterpillar-filter/master.svg" alt="Travis CI Build Status" /></a></span>
+<span class="badge-npmversion"><a href="https://npmjs.org/package/caterpillar-filter" title="View this project on NPM"><img src="https://img.shields.io/npm/v/caterpillar-filter.svg" alt="NPM version" /></a></span>
+<span class="badge-npmdownloads"><a href="https://npmjs.org/package/caterpillar-filter" title="View this project on NPM"><img src="https://img.shields.io/npm/dm/caterpillar-filter.svg" alt="NPM downloads" /></a></span>
+<span class="badge-daviddm"><a href="https://david-dm.org/bevry/caterpillar-filter" title="View the status of this project's dependencies on DavidDM"><img src="https://img.shields.io/david/bevry/caterpillar-filter.svg" alt="Dependency Status" /></a></span>
+<span class="badge-daviddmdev"><a href="https://david-dm.org/bevry/caterpillar-filter#info=devDependencies" title="View the status of this project's development dependencies on DavidDM"><img src="https://img.shields.io/david/dev/bevry/caterpillar-filter.svg" alt="Dev Dependency Status" /></a></span>
+<br class="badge-separator" />
+<span class="badge-slackin"><a href="https://slack.bevry.me" title="Join this project's slack community"><img src="https://slack.bevry.me/badge.svg" alt="Slack community badge" /></a></span>
+<span class="badge-patreon"><a href="http://patreon.com/bevry" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a></span>
+<span class="badge-gratipay"><a href="https://www.gratipay.com/bevry" title="Donate weekly to this project using Gratipay"><img src="https://img.shields.io/badge/gratipay-donate-yellow.svg" alt="Gratipay donate button" /></a></span>
+<span class="badge-flattr"><a href="https://flattr.com/profile/balupton" title="Donate to this project using Flattr"><img src="https://img.shields.io/badge/flattr-donate-yellow.svg" alt="Flattr donate button" /></a></span>
+<span class="badge-paypal"><a href="https://bevry.me/paypal" title="Donate to this project using Paypal"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="PayPal donate button" /></a></span>
+<span class="badge-bitcoin"><a href="https://bevry.me/bitcoin" title="Donate once-off to this project using Bitcoin"><img src="https://img.shields.io/badge/bitcoin-donate-yellow.svg" alt="Bitcoin donate button" /></a></span>
+<span class="badge-wishlist"><a href="https://bevry.me/wishlist" title="Buy an item on our wishlist for us"><img src="https://img.shields.io/badge/wishlist-donate-yellow.svg" alt="Wishlist browse button" /></a></span>
 
 <!-- /BADGES -->
 
 
 <!-- DESCRIPTION/ -->
 
-Filter out undesired log levels from your [Caterpillar](https://github.com/bevry/caterpillar) logger stream
+Filter out undesired log levels from your Caterpillar logger stream
 
 <!-- /DESCRIPTION -->
 
 
 <!-- INSTALL/ -->
 
-## Install
+<h2>Install</h2>
 
-### [Node](http://nodejs.org/), [Browserify](http://browserify.org/)
-- Use: `require('caterpillar-filter')`
-- Install: `npm install --save caterpillar-filter`
+<a href="https://npmjs.com" title="npm is a package manager for javascript"><h3>NPM</h3></a><ul>
+<li>Install: <code>npm install --save caterpillar-filter</code></li>
+<li>Module: <code>require('caterpillar-filter')</code></li></ul>
 
-### [Ender](http://ender.jit.su/)
-- Use: `require('caterpillar-filter')`
-- Install: `ender add caterpillar-filter`
+<a href="http://browserify.org" title="Browserify lets you require('modules') in the browser by bundling up all of your dependencies"><h3>Browserify</h3></a><ul>
+<li>Install: <code>npm install --save caterpillar-filter</code></li>
+<li>Module: <code>require('caterpillar-filter')</code></li>
+<li>CDN URL: <code>//wzrd.in/bundle/caterpillar-filter@3.0.0</code></li></ul>
+
+<a href="http://enderjs.com" title="Ender is a full featured package manager for your browser"><h3>Ender</h3></a><ul>
+<li>Install: <code>ender add caterpillar-filter</code></li>
+<li>Module: <code>require('caterpillar-filter')</code></li></ul>
+
+<h3><a href="https://github.com/bevry/editions" title="Editions are the best way to produce and consume packages you care about.">Editions</a></h3>
+
+<p>This package is published with the following editions:</p>
+
+<ul><li><code>caterpillar-filter</code> aliases <code>caterpillar-filter/index.js</code> which uses <a href="https://github.com/bevry/editions" title="Editions are the best way to produce and consume packages you care about.">Editions</a> to automatically select the correct edition for the consumers environment</li>
+<li><code>caterpillar-filter/source/index.js</code> is Source + <a href="https://babeljs.io/docs/learn-es2015/" title="ECMAScript Next">ESNext</a> + <a href="https://nodejs.org/dist/latest-v5.x/docs/api/modules.html" title="Node/CJS Modules">Require</a> + <a href="http://flowtype.org/blog/2015/02/20/Flow-Comments.html" title="Flow is a static type checker for JavaScript">Flow Type Comments</a></li>
+<li><code>caterpillar-filter/es2015/index.js</code> is <a href="https://babeljs.io" title="The compiler for writing next generation JavaScript">Babel</a> Compiled + <a href="http://babeljs.io/docs/plugins/preset-es2015/" title="ECMAScript 2015">ES2015</a> + <a href="https://nodejs.org/dist/latest-v5.x/docs/api/modules.html" title="Node/CJS Modules">Require</a></li></ul>
+
+<p>Older environments may need <a href="https://babeljs.io/docs/usage/polyfill/" title="A polyfill that emulates missing ECMAScript environment features">Babel's Polyfill</a> or something similar.</p>
 
 <!-- /INSTALL -->
 
 
 ## Usage
 
-### Example
+[Example.](https://github.com/bevry/caterpillar-examples/master/docs/filter.js)
 
-``` javascript
-// Import
-var logger = require('caterpillar').createLogger();
-var filter = require('caterpillar-filter').createFilter({level:6});  // omit log level entries above 6
-
-// Pipe logger output to filter, then filter output to stdout
-logger.pipe(filter).pipe(process.stdout);
-
-// Log
-logger.log('info',  'this is the first log entry');   // info is level 6
-logger.log('debug', 'this is the second log entry');  // debug is level 7, this will be omitted by our filter
-logger.log('info',  'this is the third log entry');   // info is level 6
-
-// Outputs
-// {"args":["this is the first log entry"],"date":"2013-04-25T08:48:38.941Z","levelCode":6,"levelName":"info","line":"9","method":"Object.<anonymous>","file":"/Users/balupton/Projects/caterpillar-filter/example.js"}
-// {"args":["this is the third log entry"],"date":"2013-04-25T08:48:38.948Z","levelCode":6,"levelName":"info","line":"11","method":"Object.<anonymous>","file":"/Users/balupton/Projects/caterpillar-filter/example.js"}
-```
-
-### Filter API, extends [caterpillar.Transform](https://github.com/bevry/caterpillar), which extends [stream.Transform](http://nodejs.org/api/stream.html#stream_class_stream_transform)
-
-``` javascript
-new (require('caterpillar-filter').Filter)(config)
-```
-
-- Methods
-	- `constructor(config?)` create our new filter instance with the config, config is optional
-	- `pipe(child)` pipe our stream to the child, also sync our config to it
-	- `setConfig(config)` set the configuration and emit the `config` event
-	- `getConfig()` get the configuration
-	- `format(entry)` format the caterpillar logger entry
-- Configuration
-	- `level` number, defaults to `6`, anything higher will be omitted
-- Events
-	- `config(config)` emitted once our configuration has updated
-
+[Documentation.](http://rawgit.com/bevry/caterpillar-filter/master/docs/index.html)
 
 <!-- HISTORY/ -->
 
-## History
-[Discover the change history by heading on over to the `History.md` file.](https://github.com/bevry/caterpillar-filter/blob/master/History.md#files)
+<h2>History</h2>
+
+<a href="https://github.com/bevry/caterpillar-filter/blob/master/HISTORY.md#files">Discover the release history by heading on over to the <code>HISTORY.md</code> file.</a>
 
 <!-- /HISTORY -->
 
 
 <!-- BACKERS/ -->
 
-## Backers
+<h2>Backers</h2>
 
-### Maintainers
+<h3>Maintainers</h3>
 
 These amazing people are maintaining this project:
 
-- Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)
+<ul><li><a href="https://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/caterpillar-filter/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/caterpillar-filter">view contributions</a></li></ul>
 
-### Sponsors
+<h3>Sponsors</h3>
 
 No sponsors yet! Will you be the first?
 
-[![Gittip donate button](http://img.shields.io/gittip/bevry.png)](https://www.gittip.com/bevry/ "Donate weekly to this project using Gittip")
-[![Flattr donate button](https://raw.github.com/balupton/flattr-buttons/master/badge-89x18.gif)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
-[![PayPayl donate button](https://www.paypalobjects.com/en_AU/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QB8GQPZAH84N6 "Donate once-off to this project using Paypal")
+<span class="badge-patreon"><a href="http://patreon.com/bevry" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a></span>
+<span class="badge-gratipay"><a href="https://www.gratipay.com/bevry" title="Donate weekly to this project using Gratipay"><img src="https://img.shields.io/badge/gratipay-donate-yellow.svg" alt="Gratipay donate button" /></a></span>
+<span class="badge-flattr"><a href="https://flattr.com/profile/balupton" title="Donate to this project using Flattr"><img src="https://img.shields.io/badge/flattr-donate-yellow.svg" alt="Flattr donate button" /></a></span>
+<span class="badge-paypal"><a href="https://bevry.me/paypal" title="Donate to this project using Paypal"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="PayPal donate button" /></a></span>
+<span class="badge-bitcoin"><a href="https://bevry.me/bitcoin" title="Donate once-off to this project using Bitcoin"><img src="https://img.shields.io/badge/bitcoin-donate-yellow.svg" alt="Bitcoin donate button" /></a></span>
+<span class="badge-wishlist"><a href="https://bevry.me/wishlist" title="Buy an item on our wishlist for us"><img src="https://img.shields.io/badge/wishlist-donate-yellow.svg" alt="Wishlist browse button" /></a></span>
 
-### Contributors
+<h3>Contributors</h3>
 
 These amazing people have contributed code to this project:
 
-- Benjamin Lupton <b@lupton.cc> (https://github.com/balupton) - [view contributions](https://github.com/bevry/caterpillar-filter/commits?author=balupton)
+<ul><li><a href="https://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/caterpillar-filter/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/caterpillar-filter">view contributions</a></li></ul>
 
-[Become a contributor!](https://github.com/bevry/caterpillar-filter/blob/master/Contributing.md#files)
+<a href="https://github.com/bevry/caterpillar-filter/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 
 <!-- /BACKERS -->
 
 
 <!-- LICENSE/ -->
 
-## License
+<h2>License</h2>
 
-Licensed under the incredibly [permissive](http://en.wikipedia.org/wiki/Permissive_free_software_licence) [MIT license](http://creativecommons.org/licenses/MIT/)
+Unless stated otherwise all works are:
 
-Copyright &copy; 2012+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)
-<br/>Copyright &copy; 2011 Benjamin Lupton <b@lupton.cc> (http://balupton.com)
+<ul><li>Copyright &copy; 2012+ <a href="http://bevry.me">Bevry Pty Ltd</a></li>
+<li>Copyright &copy; 2011 <a href="https://balupton.com">Benjamin Lupton</a></li></ul>
+
+and licensed under:
+
+<ul><li><a href="http://spdx.org/licenses/MIT.html">MIT License</a></li></ul>
 
 <!-- /LICENSE -->
-
-

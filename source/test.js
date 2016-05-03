@@ -1,43 +1,53 @@
-# Import
-{expect} = require('chai')
-joe = require('joe')
-{Logger} = require('caterpillar')
-{Filter} = require('../../')
-{PassThrough} = require('readable-stream')
+// Import
+const {equal} = require('assert-helpers')
+const {suite} = require('joe')
+const {Logger} = require('caterpillar')
+const Filter = require('../')
+const {PassThrough} = require('stream')
 
-# Test
-joe.describe 'filter', (describe,it) ->
+// Test
+suite('filter', function (suite, test) {
 
-	describe 'transform', (describe,it) ->
-		transform = null
+	suite('instantiation', function (suite, test) {
+		test('should instantiate correctly', function () {
+			const transform = new Filter()
+			equal(transform.getConfig().level, 6, 'default level was applied correctly')
+		})
 
-		it 'should instantiate correctly', ->
-			transform = new Filter()
+		test('should instantiate correctly, via create, with config', function () {
+			const transform = Filter.create({level: 5})
+			equal(transform.getConfig().level, 5, 'custom level was applied correctly')
+		})
+	})
 
-		it 'should have a default log level of 6', ->
-			expect(transform.getConfig().level).to.eql(6)
+	suite('logging', function (suite, test) {
+		const logger = new Logger()
+		const transform = new Filter({level: 5})
+		const output = new PassThrough()
+		const result = []
 
-	describe 'logging', (describe,it) ->
-		logger = new Logger()
-		transform = new Filter(level:5)
-		output = new PassThrough()
-		result = []
-		output.on 'data', (chunk) ->
-			result.push JSON.parse chunk.toString()
+		output.on('data', function (chunk) {
+			result.push(JSON.parse(chunk.toString()))
+		})
 
-		it 'should pipe correctly', ->
+		test('should pipe correctly', function () {
 			logger.pipe(transform).pipe(output)
+		})
 
-		it 'should log messages', ->
+		test('should log messages', function () {
 			logger.log(5, 'first')
 			logger.log(6, 'second')
 			logger.log(5, 'third')
+		})
 
-		it 'should provide the expected output', (done) ->
-			output.on 'end', ->
-				expect(result.length).to.eql(2)
-				expect(result[0].args[0]).to.eql('first')
-				expect(result[1].args[0]).to.eql('third')
+		test('should provide the expected output', function (done) {
+			output.on('end', function () {
+				equal(result.length, 2)
+				equal(result[0].args[0], 'first')
+				equal(result[1].args[0], 'third')
 				done()
+			})
 			logger.end()
-
+		})
+	})
+})
