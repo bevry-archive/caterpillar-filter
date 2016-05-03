@@ -63,7 +63,7 @@ Filter out undesired log levels from your Caterpillar logger stream
 
 ## Usage
 
-[Example.](https://github.com/bevry/caterpillar-examples/master/filter.js)
+[Example.](https://github.com/bevry/caterpillar-examples/blob/master/filter.js)
 
 [Documentation.](http://rawgit.com/bevry/caterpillar-filter/master/docs/index.html)
 
