@@ -1,32 +1,27 @@
-# 2016 April 27
-# https://github.com/bevry/base
-
-# Use the latest travis infrastructure
 sudo: false
-
-# We use node
 language: node_js
 node_js:
-  - "0.12"
-  - "4"
-  - "5"
-  - "6"
+- '0.12'
+- '4'
+- '6'
+- '8'
+- '10'
+- '11'
+matrix:
+  fast_finish: true
+  allow_failures: []
 cache:
   directories:
-    - node_modules
-
-# Prepare our tests
-# Ensure the project is setup correctly and compiled
-install: "npm run-script setup"
-before_script: "npm run-script compile"
-
-# Run our tests
-script: "npm test"
-
-# Custom notifications
+  - "$HOME/.npm"
+  - "$HOME/.yarn-cache"
+install:
+- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/1f4c6b3d2a0315d3fcd66e8a2cb5de31889ea87d/scripts/node-install.bash)"
+before_script:
+- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/1f4c6b3d2a0315d3fcd66e8a2cb5de31889ea87d/scripts/node-verify.bash)"
+after_success:
+- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/1f4c6b3d2a0315d3fcd66e8a2cb5de31889ea87d/scripts/surge.bash)"
+- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/1f4c6b3d2a0315d3fcd66e8a2cb5de31889ea87d/scripts/node-publish.bash)"
 notifications:
-  slack:
-    secure: QVtMffBIojFe8HVHLJfRnYyFI2P8m7do6cdhCDuZMgxTwgYLq68SppHtiKDQR18nm2cuIROxDSvaSMxi5D8UXetn78MQdE/sQz1Qzd63/znKQyQATxx/XB29Nryrvv7zmF5CZK5+hsYr3tIw8VyHUGL+HoQ9/go/G5uEbC5uB0A=
   email:
     recipients:
-      secure: ba36kWm0+42i6ZIPQTb4rRoRcyhJ0Gr+3x4dw7KDM3L5t3yiqwITBkMFiBzMsNnwqhR4OFS1I8mDYs4/SLCtl/sOyfJ2qbBz1dFq+pu2puqj2K9iXIc9xKSld3/i+oy+sfJKa+ZnMpBxyZvdKbHnhOMQTNAYVsaA/Ze0Rl4SeHs=
+      secure: DuukmA2F7fZn22uEcUfblhoQZs2OAzIduzGR7vn0SbLPocOT/5HlIWp6Jr6+BwRKREyuu8jBoj44p5RQOU/o+724047JbLVRBg7UKv9ECgLqpNdEQsthaRElsLk++MzWvDb8Szz0Z7SuhNEu+d3aLu2iblj3oJVPkDIzX2/SazE=
