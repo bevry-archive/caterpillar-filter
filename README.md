@@ -78,9 +78,9 @@ This project provides its type information via inline <a href="http://usejsdoc.o
 
 ## Usage
 
-[Example.](https://github.com/bevry/caterpillar-examples/blob/master/filter.js)
+[API Documentation.](http://master.caterpillar-filter.bevry.surge.sh/docs/)
 
-[Documentation.](http://rawgit.com/bevry/caterpillar-filter/master/docs/index.html)
+[Example.](https://github.com/bevry/caterpillar-examples/blob/master/filter.js)
 
 <!-- HISTORY/ -->
 

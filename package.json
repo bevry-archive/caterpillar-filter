@@ -1,7 +1,7 @@
 {
   "title": "Filter Transform for [Caterpillar](https://github.com/bevry/caterpillar)",
   "name": "caterpillar-filter",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Filter out undesired log levels from your Caterpillar logger stream",
   "homepage": "https://github.com/bevry/caterpillar-filter",
   "license": "MIT",
@@ -73,8 +73,7 @@
       "tags": [
         "javascript",
         "esnext",
-        "require",
-        "flow type comments"
+        "require"
       ],
       "engines": {
         "node": "6 || 8 || 10 || 11",
@@ -124,9 +123,7 @@
     "eslint-config-bevry": "^1.1.1",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-flow-vars": "^0.5.0",
     "eslint-plugin-prettier": "^3.0.1",
-    "flow-bin": "^0.89.0",
     "jsdoc": "^3.5.5",
     "kava": "^3.1.0",
     "minami": "^1.2.3",
@@ -157,10 +154,9 @@
     "our:setup": "npm run our:setup:npm",
     "our:setup:npm": "npm install",
     "our:test": "npm run our:verify && npm test",
-    "our:verify": "npm run our:verify:directory && npm run our:verify:eslint && npm run our:verify:flow",
+    "our:verify": "npm run our:verify:directory && npm run our:verify:eslint",
     "our:verify:directory": "npx valid-directory",
     "our:verify:eslint": "eslint --fix --ignore-pattern '**/*.d.ts' --ignore-pattern '**/vendor/' --ignore-pattern '**/node_modules/' --ext .mjs,.js,.jsx,.ts,.tsx ./source",
-    "our:verify:flow": "flow check",
     "test": "node ./test.js"
   },
   "eslintConfig": {

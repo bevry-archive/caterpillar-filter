@@ -1,5 +1,10 @@
 # History
 
+## v3.1.0 2019 January 1
+
+-   Moved from Flow Type Comments to TypeScript JSDoc
+-   Updated [base files](https://github.com/bevry/base) and [editions](https://editions.bevry.me) using [boundation](https://github.com/bevry/boundation)
+
 ## v3.0.0 2016 May 4
 
 -   Converted from CoffeeScript to JavaScript
