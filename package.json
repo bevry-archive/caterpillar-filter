@@ -1,7 +1,7 @@
 {
   "title": "Filter Transform for [Caterpillar](https://github.com/bevry/caterpillar)",
   "name": "caterpillar-filter",
-  "version": "4.4.0",
+  "version": "4.5.0",
   "description": "Filter out undesired log levels from your Caterpillar logger stream",
   "homepage": "https://github.com/bevry/caterpillar-filter",
   "license": "MIT",
@@ -26,6 +26,7 @@
       "daviddm",
       "daviddmdev",
       "---",
+      "githubsponsors",
       "patreon",
       "flattr",
       "liberapay",
@@ -36,6 +37,7 @@
       "wishlist"
     ],
     "config": {
+      "githubSponsorsUsername": "balupton",
       "buymeacoffeeUsername": "balupton",
       "cryptoURL": "https://bevry.me/crypto",
       "flattrUsername": "balupton",
@@ -95,14 +97,15 @@
       }
     }
   ],
+  "type": "commonjs",
   "main": "source/index.js",
   "browser": "edition-browsers/index.js",
   "devDependencies": {
-    "@babel/cli": "^7.7.4",
-    "@babel/core": "^7.7.4",
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
     "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
-    "@babel/preset-env": "^7.7.4",
-    "assert-helpers": "^5.7.0",
+    "@babel/preset-env": "^7.7.6",
+    "assert-helpers": "^5.8.0",
     "caterpillar": "^4.0.0",
     "eslint": "^6.7.2",
     "eslint-config-bevry": "^2.2.0",
@@ -113,7 +116,7 @@
     "kava": "^4.3.0",
     "minami": "^1.2.3",
     "prettier": "^1.19.1",
-    "projectz": "^1.14.0",
+    "projectz": "^1.15.0",
     "surge": "^0.21.3",
     "valid-directory": "^1.5.0"
   },
@@ -162,7 +165,7 @@
             "@babel/preset-env",
             {
               "targets": "defaults",
-              "modules": "commonjs"
+              "modules": false
             }
           ]
         ],
