@@ -25,7 +25,7 @@ class Filter extends Transform {
 	*/
 	getInitialConfig() {
 		return {
-			level: 6
+			level: 6,
 		}
 	}
 

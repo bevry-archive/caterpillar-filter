@@ -33,6 +33,12 @@ Filter out undesired log levels from your Caterpillar logger stream
 <!-- /DESCRIPTION -->
 
 
+## Usage
+
+[Complete API Documentation.](http://master.caterpillar-filter.bevry.surge.sh/docs/)
+
+[Example.](https://github.com/bevry/caterpillar-examples/blob/master/filter.js)
+
 <!-- INSTALL/ -->
 
 <h2>Install</h2>
@@ -40,14 +46,15 @@ Filter out undesired log levels from your Caterpillar logger stream
 <a href="https://npmjs.com" title="npm is a package manager for javascript"><h3>npm</h3></a>
 <ul>
 <li>Install: <code>npm install --save caterpillar-filter</code></li>
-<li>Require: <code>require('caterpillar-filter')</code></li>
+<li>Import: <code>import * as pkg from ('caterpillar-filter')</code></li>
+<li>Require: <code>const pkg = require('caterpillar-filter')</code></li>
 </ul>
 
 <a href="https://jspm.io" title="Native ES Modules CDN"><h3>jspm</h3></a>
 
 ``` html
 <script type="module">
-    import * as pkg from '//dev.jspm.io/caterpillar-filter'
+    import * as pkg from '//dev.jspm.io/caterpillar-filter@5.0.0'
 </script>
 ```
 
@@ -56,8 +63,8 @@ Filter out undesired log levels from your Caterpillar logger stream
 <p>This package is published with the following editions:</p>
 
 <ul><li><code>caterpillar-filter</code> aliases <code>caterpillar-filter/source/index.js</code></li>
-<li><code>caterpillar-filter/source/index.js</code> is esnext source code with require for modules</li>
-<li><code>caterpillar-filter/edition-browsers/index.js</code> is esnext compiled for browsers with require for modules</li></ul>
+<li><code>caterpillar-filter/source/index.js</code> is <a href="https://en.wikipedia.org/wiki/ECMAScript#ES.Next" title="ECMAScript Next">ESNext</a> source code for <a href="https://nodejs.org" title="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine">Node.js</a> with <a href="https://nodejs.org/dist/latest-v5.x/docs/api/modules.html" title="Node/CJS Modules">Require</a> for modules</li>
+<li><code>caterpillar-filter/edition-browsers/index.js</code> is <a href="https://en.wikipedia.org/wiki/ECMAScript#ES.Next" title="ECMAScript Next">ESNext</a> compiled for web browsers with <a href="https://nodejs.org/dist/latest-v5.x/docs/api/modules.html" title="Node/CJS Modules">Require</a> for modules</li></ul>
 
 <h3><a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a></h3>
 
@@ -73,12 +80,6 @@ This project provides its type information via inline <a href="http://usejsdoc.o
 
 <!-- /INSTALL -->
 
-
-## Usage
-
-[API Documentation.](http://master.caterpillar-filter.bevry.surge.sh/docs/)
-
-[Example.](https://github.com/bevry/caterpillar-examples/blob/master/filter.js)
 
 <!-- HISTORY/ -->
 
