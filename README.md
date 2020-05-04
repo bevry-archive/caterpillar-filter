@@ -54,7 +54,7 @@ Filter out undesired log levels from your Caterpillar logger stream
 
 ``` html
 <script type="module">
-    import * as pkg from '//dev.jspm.io/caterpillar-filter@5.0.0'
+    import * as pkg from '//dev.jspm.io/caterpillar-filter@5.1.0'
 </script>
 ```
 
