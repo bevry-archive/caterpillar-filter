@@ -10,7 +10,7 @@ import { Transform, LogEntry } from 'caterpillar'
  * import Filter from 'caterpillar-filter'
  * const logger = new Logger()
  * const filter = new Filter()
- * logger.pipe(Filter.pipe(process.stdout)
+ * logger.pipe(filter).pipe(process.stdout)
  * logger.log('info', 'this will be outputted')
  * logger.log('debug', 'this will be ignored')
  * logger.setConfig({level: 5})
