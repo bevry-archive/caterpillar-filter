@@ -1,11 +1,9 @@
-'use strict'
-
 // Import
-const { equal } = require('assert-helpers')
-const { suite } = require('kava')
-const { Logger } = require('caterpillar')
-const Filter = require('./')
-const { PassThrough } = require('stream')
+import { equal } from 'assert-helpers'
+import { suite } from 'kava'
+import { Logger, LogEntry } from 'caterpillar'
+import { PassThrough } from 'stream'
+import Filter from './index.js'
 
 // Test
 suite('filter', function (suite, test) {
@@ -33,7 +31,7 @@ suite('filter', function (suite, test) {
 		const logger = new Logger()
 		const transform = new Filter({ level: 5 })
 		const output = new PassThrough()
-		const result = []
+		const result: LogEntry[] = []
 
 		output.on('data', function (chunk) {
 			result.push(JSON.parse(chunk.toString()))

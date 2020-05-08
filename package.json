@@ -1,7 +1,7 @@
 {
-  "title": "Filter Transform for [Caterpillar](https://github.com/bevry/caterpillar)",
+  "title": "Filter Transform for Caterpillar",
   "name": "caterpillar-filter",
-  "version": "5.1.0",
+  "version": "6.0.0",
   "description": "Filter out undesired log levels from your Caterpillar logger stream",
   "homepage": "https://github.com/bevry/caterpillar-filter",
   "license": "MIT",
@@ -11,6 +11,7 @@
     "caterpillar-transform",
     "console",
     "debug",
+    "export-default",
     "human",
     "log",
     "logger",
@@ -85,19 +86,6 @@
       "engines": false
     },
     {
-      "description": "TypeScript compiled against ES2019 for web browsers with Import for modules",
-      "directory": "edition-browsers",
-      "entry": "index.js",
-      "tags": [
-        "javascript",
-        "import"
-      ],
-      "engines": {
-        "node": false,
-        "browsers": "defaults"
-      }
-    },
-    {
       "description": "TypeScript compiled against ESNext for Node.js with Require for modules",
       "directory": "edition-esnext",
       "entry": "index.js",
@@ -109,6 +97,19 @@
       "engines": {
         "node": "10 || 12 || 13 || 14",
         "browsers": false
+      }
+    },
+    {
+      "description": "TypeScript compiled against ES2019 for web browsers with Import for modules",
+      "directory": "edition-browsers",
+      "entry": "index.js",
+      "tags": [
+        "javascript",
+        "import"
+      ],
+      "engines": {
+        "node": false,
+        "browsers": "defaults"
       }
     }
   ],
@@ -122,7 +123,7 @@
     "@typescript-eslint/eslint-plugin": "^2.31.0",
     "@typescript-eslint/parser": "^2.31.0",
     "assert-helpers": "^6.2.0",
-    "caterpillar": "^5.0.0",
+    "caterpillar": "^5.1.2",
     "eslint": "^6.8.0",
     "eslint-config-bevry": "^3.4.0",
     "eslint-config-prettier": "^6.11.0",
@@ -138,7 +139,7 @@
     "valid-module": "^1.0.0"
   },
   "peerDependencies": {
-    "caterpillar": "^5.0.0"
+    "caterpillar": "^5.1.2"
   },
   "scripts": {
     "our:clean": "rm -Rf ./docs ./edition* ./es2015 ./es5 ./out ./.next",
@@ -171,7 +172,10 @@
   "eslintConfig": {
     "extends": [
       "bevry"
-    ]
+    ],
+    "rules": {
+      "class-methods-use-this": "off"
+    }
   },
   "prettier": {
     "semi": false,

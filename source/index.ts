@@ -1,28 +1,27 @@
-// @ts-check
-/* eslint class-methods-use-this:0 */
-'use strict'
-
 // Imports
-const { Transform } = require('caterpillar')
+import { Transform, LogEntry } from 'caterpillar'
 
 /**
-Filter the log entires by level.
-Extends http://master.caterpillar.bevry.surge.sh/docs/Transform.html
-@extends Transform
-@example
-const logger = require('caterpillar').create()
-logger.pipe(require('caterpillar-filter').create()).pipe(process.stdout)
-logger.log('info', 'this will be outputted')
-logger.log('debug', 'this will be ignored')
-logger.setConfig({level: 5})
-logger.log('info', 'now even this will be ignored')
-logger.log('note', 'but not this')
-*/
-class Filter extends Transform {
+ * Filter the log entires by level.
+ * @extends Transform
+ * @example
+ * ``` javascript
+ * import Logger from 'caterpillar'
+ * import Filter from 'caterpillar-filter'
+ * const logger = new Logger()
+ * const filter = new Filter()
+ * logger.pipe(Filter.pipe(process.stdout)
+ * logger.log('info', 'this will be outputted')
+ * logger.log('debug', 'this will be ignored')
+ * logger.setConfig({level: 5})
+ * logger.log('info', 'now even this will be ignored')
+ * logger.log('note', 'but not this')
+ * ```
+ */
+export class Filter extends Transform {
 	/**
-	Get the initial configuration.
-	@returns {Object}
-	*/
+	 * Get the initial configuration.
+	 */
 	getInitialConfig() {
 		return {
 			level: 6,
@@ -30,17 +29,17 @@ class Filter extends Transform {
 	}
 
 	/**
-	Empty log entries that are not within our level range.
-	Convert the message from Logger into JSON, check its level, if it is above our level, discard it.
-	@param {string} message
-	@returns {Object?}
-	*/
-	format(message) {
+	 * Empty log entries that are not within our level range.
+	 * Convert the message from Logger into JSON, check its level, if it is above our level, discard it.
+	 * @param message
+	 */
+	format(message: string): LogEntry {
 		const entry = JSON.parse(message)
 		const { level } = this.getConfig()
 		return entry.levelNumber > level ? null : entry
 	}
 }
 
-// Export
-module.exports = Filter
+// Aliases
+export const create = Filter.create.bind(Filter)
+export default Filter
