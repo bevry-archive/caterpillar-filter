@@ -35,9 +35,14 @@ Filter out undesired log levels from your Caterpillar logger stream
 
 ## Usage
 
-[Complete API Documentation.](http://master.caterpillar-filter.bevry.surge.sh/docs/)
+[Complete API Documentation.](http://master.caterpillar-filter.bevry.surge.sh/docs/globals.html)
+
+
 
 [Example.](https://github.com/bevry/caterpillar-examples/blob/master/filter.js)
+
+
+
 
 <!-- INSTALL/ -->
 
@@ -79,7 +84,6 @@ This project provides its type information via inline <a href="http://usejsdoc.o
 ```
 
 <!-- /INSTALL -->
-
 
 <!-- HISTORY/ -->
 
