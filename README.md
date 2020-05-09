@@ -37,7 +37,7 @@ Filter out undesired log levels from your Caterpillar logger stream
 
 [Complete API Documentation.](http://master.caterpillar-filter.bevry.surge.sh/docs/globals.html)
 
-[Example.](https://github.com/bevry/caterpillar-examples/blob/master/filter.js)
+[Example.](https://github.com/bevry/caterpillar-examples/blob/master/source/filter.ts)
 
 <!-- INSTALL/ -->
 
