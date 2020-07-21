@@ -54,7 +54,7 @@ Filter out undesired log levels from your Caterpillar logger stream
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.pika.dev/caterpillar-filter/^6.14.0'
+    import pkg from '//cdn.pika.dev/caterpillar-filter/^6.15.0'
 </script>
 ```
 
@@ -62,7 +62,7 @@ Filter out undesired log levels from your Caterpillar logger stream
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/caterpillar-filter@^6.14.0'
+    import pkg from '//unpkg.com/caterpillar-filter@^6.15.0'
 </script>
 ```
 
@@ -70,7 +70,7 @@ Filter out undesired log levels from your Caterpillar logger stream
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/caterpillar-filter@6.14.0'
+    import pkg from '//dev.jspm.io/caterpillar-filter@6.15.0'
 </script>
 ```
 
